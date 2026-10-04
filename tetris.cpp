@@ -70,13 +70,40 @@ WORD GetColorAttribute(int nID)
 int main()
 {
     // shape definitions - dots are empty spaces, X is block
-    tetromino[0].append(L"..X...X...X...X."); // I
-    tetromino[1].append(L"..X..XX..X......"); // J
-    tetromino[2].append(L".X...XX...X....."); // L
-    tetromino[3].append(L".....XX..XX....."); // O
-    tetromino[4].append(L"..X..XX...X....."); // S
-    tetromino[5].append(L".....XX...X...X."); // T
-    tetromino[6].append(L".....XX..X...X.."); // Z
+    tetromino[0].append(L"..X.
+                          ..X.
+                          ..X.
+                          ..X."); // I
+
+    tetromino[1].append(L"..X.
+                          .XX.
+                          .X..
+                          ...."); // J
+
+    tetromino[2].append(L".X..
+                          .XX.
+                          ..X.
+                          ...."); // L
+
+    tetromino[3].append(L"....
+                          .XX.
+                          .XX.
+                          ...."); // O
+
+    tetromino[4].append(L"..X.
+                          .XX.
+                          ..X.
+                          ...."); // S
+
+    tetromino[5].append(L"....
+                          .XX.
+                          ..X.
+                          ..X."); // T
+
+    tetromino[6].append(L"....
+                          .XX.
+                          .X..
+                          .X.."); // Z
 
     pField = new unsigned char[nFieldWidth * nFieldHeight];
     for (int x = 0; x < nFieldWidth; x++)
